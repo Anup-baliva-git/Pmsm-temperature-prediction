@@ -9,6 +9,10 @@ Predict `pm`, the permanent-magnet temperature, from the electric-motor bench ta
 
 The database and `pmsm_model.pkl` were not in the files that arrived, so this repo documents the pipeline and does not pretend to serve predictions.
 
+## Note
+
+`notebook/Regression_cap.ipynb` is the original analysis: EDA, cleaning, the train/test split, and the model pipelines. The Spyder `.py` files from `d:\PMSM regression capstone 1` and `Database.db` were never transferred, so they are not in this repo. The notebook still points at `D:\Data science Inttruvu.ai\Capstone projects for data science (extracted)\Database.db` and will not rerun until that file is present. `app.py` is only the explainer page, not the training pipeline.
+
 ## Pipeline the notebook builds
 
 1. Load the table through SQLite, with a 100,000-row sample and a smaller sample used for exploration.
