@@ -1,5 +1,10 @@
 # PMSM magnet temperature regression
 
+## Demo
+
+`pip install -r requirements.txt`, then `streamlit run app.py` (http://127.0.0.1:8509, or double-click `Launch-Demo.bat`). The page explains the pipeline and does not predict a temperature.
+
+
 Predict `pm`, the permanent-magnet temperature, from the electric-motor bench table `Electric_cars` in the capstone database. The notebook reads `u_q`, `coolant`, `u_d`, `motor_speed`, `i_d`, `i_q`, `ambient`, `pm`, and `profile_id`.
 
 The database and `pmsm_model.pkl` were not in the files that arrived, so this repo documents the pipeline and does not pretend to serve predictions.
@@ -43,4 +48,4 @@ Regression on a physical sensor target, with the motor profile held in mind so r
 
 ## Windows
 
-Double-click `Launch-Demo.bat` in this folder. It says the database is missing and opens this write-up only. It does not start Streamlit and it does not predict a temperature. Start `Launch-Portfolio.bat` at the repo root first if you want the page to load.
+Double-click `Launch-Demo.bat` in this folder. It starts the pipeline page at http://127.0.0.1:8509. There is no model and no `Database.db`, so the page does not predict a temperature.
